@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+.FisicaMobile{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FF6200;
+}
+.logo img{
+    width: 50px;
+    margin-top: 28px;
+    margin-left: 28px;
+}
+.title1{
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 60px;
+}
+.title1 span{
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    color: white;
+    font-size: 25px;
+}
+.title1 p{
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    font-size: 15px;
+}
+.form1{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+.form1 label{
+    color: white;
+    margin-left: 8px;
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 13px;
+}
+.form1 .digitavel{
+    background-color: #FF6200;
+    border: 0;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 40vw;
+    font-size: 15px;
+}
+.form1 .digitavel:focus{
+    outline: none;
+}
+.form1 .digitavel::placeholder{
+    color: white;
+}
+.form1 button{
+    width: 90vw;
+    background-color: white;
+    color: black;
+    border: 0;
+    height: 50px;
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}

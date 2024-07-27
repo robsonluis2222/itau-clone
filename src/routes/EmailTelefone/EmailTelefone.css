@@ -1,0 +1,66 @@
+.EmailTelefone{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FF6200;
+}
+.title-et{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    text-align: center;
+}
+.title-et span{
+    color: white;
+    margin-left: 8px;
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+}
+.form3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: white;
+    gap: 10px;
+    margin-left: 8px;
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+.form3 .digitavel{
+    background-color: #FF6200;
+    border: 0;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 80vw;
+    height: 30px;
+    font-size: 15px;
+    font-size: 17px;
+    text-align: center;
+}
+.form3 .digitavel:focus{
+    outline: none;
+}
+.form3 .digitavel::placeholder{
+    color: white;
+}
+.form3 button{
+    width: 90vw;
+    background-color: white;
+    color: black;
+    border: 0;
+    height: 50px;
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 18px;
+}
