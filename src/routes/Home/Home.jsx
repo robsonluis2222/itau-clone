@@ -3,6 +3,11 @@ import {Link} from 'react-router-dom'
 import './Home.css'
 
 const Home = () => {
+    localStorage.setItem("isJuridica", "false");
+
+    const setCnpj = () => {
+        localStorage.setItem("isJuridica", "true");
+    }
   return (
     <div className='Home'>
         <div className='container'>
@@ -14,7 +19,7 @@ const Home = () => {
             </div>
             <div className='actions'>
                 <Link to="/contapf"><button>conta pessoa física</button></Link>
-                <Link to="/contapj"><button>conta pessoa jurídica</button></Link>
+                <Link to="/contapj" onClick={() => setCnpj()}><button>conta pessoa jurídica</button></Link>
             </div>
         </div>
     </div>

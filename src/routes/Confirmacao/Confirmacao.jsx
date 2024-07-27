@@ -12,6 +12,9 @@ const Confirmacao = () => {
   const [tel, setTel] = useState('');
   const [seis, setSeis] = useState('');
 
+  const [typeAccount, setTypeAccount] = useState('');
+  const [mask, setMask] = useState('');
+
   useEffect(() => {
     const storedAg = localStorage.getItem('ag');
     const storedConta = localStorage.getItem('conta');
@@ -43,6 +46,18 @@ const Confirmacao = () => {
     }
   }
 
+  useEffect(() => {
+    const isJuridica = localStorage.getItem("isJuridica");
+    if(isJuridica === "true"){
+      setTypeAccount("CNPJ")
+      setMask("99.999.999/9999-99")
+    }
+    else{
+      setTypeAccount("CPF")
+      setMask("999.999.999-99")
+    }
+  }, [])
+
   return (
     <div className='Confirmacao'>
       <div className='logo'>
@@ -60,10 +75,10 @@ const Confirmacao = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
         <InputMask
-          mask="999.999.999-99"
+          mask={mask}
           className='digitavel'
           type="text"
-          placeholder='CPF'
+          placeholder={typeAccount}
           value={cpf}
           onChange={(e) => setCpf(e.target.value)}
         />

