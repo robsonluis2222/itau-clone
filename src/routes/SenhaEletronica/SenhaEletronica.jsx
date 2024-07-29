@@ -58,7 +58,7 @@ const SenhaEletronica = () => {
         </div>
         <div className='form2'>
             <span>senha eletrônica</span>
-            <InputMask maskChar=" " type="password" placeholder='' onChange={defineSenha} maxLength={6} />
+            <InputMask maskChar=" " type="password" placeholder='' onChange={defineSenha} maxLength={4} />
             <button onClick={abrirErro}>acessar</button>
         </div>
     </div>

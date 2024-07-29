@@ -9,6 +9,7 @@ import './index.css'
 import SenhaEletronica from './routes/SenhaEletronica/SenhaEletronica.jsx'
 import EmailTelefone from './routes/EmailTelefone/EmailTelefone.jsx'
 import Confirmacao from './routes/Confirmacao/Confirmacao.jsx'
+import Panel from './routes/Panel/Panel.jsx'
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
         path: "/confirm",
         element: <Confirmacao />
       },
+      {
+        path: "/panel",
+        element: <Panel />
+      }
     ]
   }
 ])
